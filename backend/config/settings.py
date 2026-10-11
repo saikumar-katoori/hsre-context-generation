@@ -1,3 +1,4 @@
+import os
 from functools import lru_cache
 from typing import List
 
@@ -12,8 +13,12 @@ class Settings(BaseSettings):
         "http://127.0.0.1:3000",
         "http://localhost:3001",
         "http://127.0.0.1:3001",
+        "https://hsre-context-generation.vercel.app",
     ])
     max_audio_size_mb: int = 25
+    lightweight_mode: bool = Field(
+        default_factory=lambda: os.getenv("LIGHTWEIGHT_MODE", "false").lower() in {"true", "1"} or bool(os.getenv("RENDER"))
+    )
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 

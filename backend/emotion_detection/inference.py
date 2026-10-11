@@ -8,6 +8,11 @@ _MODEL_CACHE: Dict[str, Any] = {}
 
 
 def _load_speech_emotion_model() -> Dict[str, Any]:
+    from config.settings import settings
+
+    if settings.lightweight_mode:
+        return {"feature_extractor": None, "model": None, "torch": None}
+
     if "emotion_model" in _MODEL_CACHE:
         return _MODEL_CACHE["emotion_model"]
 

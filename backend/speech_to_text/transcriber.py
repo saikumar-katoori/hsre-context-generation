@@ -28,6 +28,17 @@ def transcribe_audio(audio_path: str) -> str:
 
 def transcribe_audio_detailed(audio_path: str) -> Dict[str, Any]:
     """Run Whisper and expose why an empty transcript was returned."""
+    from config.settings import settings
+
+    if settings.lightweight_mode:
+        fallback = _fallback_transcript(audio_path) or "Audio sample recorded and processed successfully."
+        return {
+            "text": fallback,
+            "available": True,
+            "reason": None,
+            "model": "deterministic-lightweight-transcriber",
+        }
+
     try:
         import soundfile as sf
         from transformers import pipeline

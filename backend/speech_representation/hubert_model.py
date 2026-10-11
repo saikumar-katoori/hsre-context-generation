@@ -9,6 +9,10 @@ from config.model_config import HUBERT_MODEL
 
 
 def _load_hubert_components() -> tuple[Any, Any, Any] | tuple[None, None, None]:
+    from config.settings import settings
+
+    if settings.lightweight_mode:
+        return None, None, None
     try:
         import torch
         from transformers import AutoFeatureExtractor, AutoModel

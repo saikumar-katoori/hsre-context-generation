@@ -8,6 +8,8 @@ services:
     startCommand: "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: CORS_ORIGINS
-        value: "https://your-vercel-app.vercel.app"
+        value: "https://hsre-context-generation.vercel.app"
+      - key: LIGHTWEIGHT_MODE
+        value: "true"
       - key: PYTHONUNBUFFERED
         value: "1"

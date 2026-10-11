@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="870" viewBox="0 0 1000 870" role="img" aria-labelledby="title desc">
+  <title id="title">Confusion matrix layout template</title>
+  <desc id="desc">Empty eight-class confusion-matrix layout with no scores. Replace all cells with held-out test results before publication.</desc>
+  <style>
+    .bg{fill:#fff}.title{font:700 26px Georgia,serif;fill:#172b4d}.sub{font:15px Arial,sans-serif;fill:#526174}.axis{font:700 15px Arial,sans-serif;fill:#26384a}.lab{font:14px Arial,sans-serif;fill:#334155}.cell{fill:#f5f6f4;stroke:#c8d0d6;stroke-width:1.4}.hint{font:12px Arial,sans-serif;fill:#718096}
+  </style>
+  <rect class="bg" width="1000" height="820"/>
+  <text class="title" x="500" y="42" text-anchor="middle">Emotion confusion matrix</text>
+  <text class="sub" x="500" y="68" text-anchor="middle">TEMPLATE ONLY · replace with normalized held-out test predictions</text>
+  <text class="axis" x="550" y="104" text-anchor="middle">Predicted class</text>
+  <text class="axis" x="36" y="448" text-anchor="middle" transform="rotate(-90 36 448)">True class</text>
+  <g class="lab" text-anchor="middle">
+    <text x="249" y="135">neutral</text><text x="333" y="135">happy</text><text x="417" y="135">sad</text><text x="501" y="135">angry</text>
+    <text x="585" y="135">fear</text><text x="669" y="135">surprise</text><text x="753" y="135">disgust</text><text x="837" y="135">frustrated</text>
+  </g>
+  <g class="lab" text-anchor="end">
+    <text x="164" y="190">neutral</text><text x="164" y="274">happy</text><text x="164" y="358">sad</text><text x="164" y="442">angry</text>
+    <text x="164" y="526">fear</text><text x="164" y="610">surprise</text><text x="164" y="694">disgust</text><text x="164" y="778">frustrated</text>
+  </g>
+  <g>
+    <rect class="cell" x="207" y="151" width="84" height="84"/><rect class="cell" x="291" y="151" width="84" height="84"/><rect class="cell" x="375" y="151" width="84" height="84"/><rect class="cell" x="459" y="151" width="84" height="84"/><rect class="cell" x="543" y="151" width="84" height="84"/><rect class="cell" x="627" y="151" width="84" height="84"/><rect class="cell" x="711" y="151" width="84" height="84"/><rect class="cell" x="795" y="151" width="84" height="84"/>
+    <rect class="cell" x="207" y="235" width="84" height="84"/><rect class="cell" x="291" y="235" width="84" height="84"/><rect class="cell" x="375" y="235" width="84" height="84"/><rect class="cell" x="459" y="235" width="84" height="84"/><rect class="cell" x="543" y="235" width="84" height="84"/><rect class="cell" x="627" y="235" width="84" height="84"/><rect class="cell" x="711" y="235" width="84" height="84"/><rect class="cell" x="795" y="235" width="84" height="84"/>
+    <rect class="cell" x="207" y="319" width="84" height="84"/><rect class="cell" x="291" y="319" width="84" height="84"/><rect class="cell" x="375" y="319" width="84" height="84"/><rect class="cell" x="459" y="319" width="84" height="84"/><rect class="cell" x="543" y="319" width="84" height="84"/><rect class="cell" x="627" y="319" width="84" height="84"/><rect class="cell" x="711" y="319" width="84" height="84"/><rect class="cell" x="795" y="319" width="84" height="84"/>
+    <rect class="cell" x="207" y="403" width="84" height="84"/><rect class="cell" x="291" y="403" width="84" height="84"/><rect class="cell" x="375" y="403" width="84" height="84"/><rect class="cell" x="459" y="403" width="84" height="84"/><rect class="cell" x="543" y="403" width="84" height="84"/><rect class="cell" x="627" y="403" width="84" height="84"/><rect class="cell" x="711" y="403" width="84" height="84"/><rect class="cell" x="795" y="403" width="84" height="84"/>
+    <rect class="cell" x="207" y="487" width="84" height="84"/><rect class="cell" x="291" y="487" width="84" height="84"/><rect class="cell" x="375" y="487" width="84" height="84"/><rect class="cell" x="459" y="487" width="84" height="84"/><rect class="cell" x="543" y="487" width="84" height="84"/><rect class="cell" x="627" y="487" width="84" height="84"/><rect class="cell" x="711" y="487" width="84" height="84"/><rect class="cell" x="795" y="487" width="84" height="84"/>
+    <rect class="cell" x="207" y="571" width="84" height="84"/><rect class="cell" x="291" y="571" width="84" height="84"/><rect class="cell" x="375" y="571" width="84" height="84"/><rect class="cell" x="459" y="571" width="84" height="84"/><rect class="cell" x="543" y="571" width="84" height="84"/><rect class="cell" x="627" y="571" width="84" height="84"/><rect class="cell" x="711" y="571" width="84" height="84"/><rect class="cell" x="795" y="571" width="84" height="84"/>
+    <rect class="cell" x="207" y="655" width="84" height="84"/><rect class="cell" x="291" y="655" width="84" height="84"/><rect class="cell" x="375" y="655" width="84" height="84"/><rect class="cell" x="459" y="655" width="84" height="84"/><rect class="cell" x="543" y="655" width="84" height="84"/><rect class="cell" x="627" y="655" width="84" height="84"/><rect class="cell" x="711" y="655" width="84" height="84"/><rect class="cell" x="795" y="655" width="84" height="84"/>
+    <rect class="cell" x="207" y="739" width="84" height="84"/><rect class="cell" x="291" y="739" width="84" height="84"/><rect class="cell" x="375" y="739" width="84" height="84"/><rect class="cell" x="459" y="739" width="84" height="84"/><rect class="cell" x="543" y="739" width="84" height="84"/><rect class="cell" x="627" y="739" width="84" height="84"/><rect class="cell" x="711" y="739" width="84" height="84"/><rect class="cell" x="795" y="739" width="84" height="84"/>
+  </g>
+  <text class="hint" x="543" y="849" text-anchor="middle">Cells intentionally empty: no ground-truth evaluation results were supplied.</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Per-module latency chart template</title>
+  <desc id="desc">Empty latency chart with module labels and no measurements. Replace the template with measured means and error bars.</desc>
+  <style>
+    .bg{fill:#fff}.title{font:700 27px Georgia,serif;fill:#172b4d}.sub{font:15px Arial,sans-serif;fill:#526174}.axis{font:700 15px Arial,sans-serif;fill:#26384a}.lab{font:13px Arial,sans-serif;fill:#334155}.grid{stroke:#dce2e6;stroke-width:1}.base{stroke:#526174;stroke-width:2}.note{font:700 14px Arial,sans-serif;fill:#a45624}
+  </style>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="title" x="600" y="46" text-anchor="middle">Per-module and end-to-end latency</text>
+  <text class="sub" x="600" y="73" text-anchor="middle">TEMPLATE ONLY · add measured means and uncertainty/error bars</text>
+  <text class="axis" x="36" y="345" text-anchor="middle" transform="rotate(-90 36 345)">Mean latency (ms)</text>
+  <line class="base" x1="115" y1="570" x2="1165" y2="570"/><line class="base" x1="115" y1="120" x2="115" y2="570"/>
+  <g class="grid">
+    <line x1="115" y1="480" x2="1165" y2="480"/><line x1="115" y1="390" x2="1165" y2="390"/><line x1="115" y1="300" x2="1165" y2="300"/><line x1="115" y1="210" x2="1165" y2="210"/><line x1="115" y1="120" x2="1165" y2="120"/>
+  </g>
+  <g class="lab" text-anchor="end"><text x="105" y="575">0</text><text x="105" y="485">TBD</text><text x="105" y="395">TBD</text><text x="105" y="305">TBD</text><text x="105" y="215">TBD</text><text x="105" y="125">TBD</text></g>
+  <g class="lab" text-anchor="middle">
+    <text x="190" y="596"><tspan x="190">Audio</tspan><tspan x="190" dy="17">preprocess</tspan></text>
+    <text x="350" y="596"><tspan x="350">Speech</tspan><tspan x="350" dy="17">representation</tspan></text>
+    <text x="510" y="596"><tspan x="510">Speech-to-</tspan><tspan x="510" dy="17">text</tspan></text>
+    <text x="670" y="596"><tspan x="670">Emotion</tspan><tspan x="670" dy="17">inference</tspan></text>
+    <text x="830" y="596"><tspan x="830">Intent</tspan><tspan x="830" dy="17">inference</tspan></text>
+    <text x="990" y="596"><tspan x="990">HSRE</tspan><tspan x="990" dy="17">reasoning</tspan></text>
+    <text x="1130" y="596"><tspan x="1130">End-to-</tspan><tspan x="1130" dy="17">end</tspan></text>
+  </g>
+  <text class="note" x="600" y="672" text-anchor="middle">No values plotted: latency measurements and hardware details are not present in the repository.</text>
+</svg>

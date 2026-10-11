@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: hsre-backend
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: CORS_ORIGINS
+        value: "https://your-vercel-app.vercel.app"
+      - key: PYTHONUNBUFFERED
+        value: "1"
